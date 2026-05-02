@@ -11,7 +11,7 @@
 body {
     margin: 0;
     font-family: 'Inter', sans-serif;
-    background: url('https://cdn.discordapp.com/attachments/1499529579751145472/1499568118253490307/togif.gif?ex=69f54524&is=69f3f3a4&hm=fb3cce6f7a97c25c27adc952306ba112e6af87329781a3c596d10d5a1184764d&') center/cover no-repeat fixed;
+    background: url('https://cdn.discordapp.com/attachments/1478515857222139934/1499641406824775842/IMG_8743.jpg?ex=69f6dae5&is=69f58965&hm=e534e056eefcce32cf5b3741bafd2412ddbea87b61e732a73f8fcef7489e46fa&') center/cover no-repeat fixed;
     color: white;
 }
 
@@ -173,16 +173,17 @@ body::before {
 
         <div class="right">
             <div class="name">gweg</div>
-            <div class="tag">@gayfurryjew.</div>
+            <div class="tag">@gwegr</div>
 
             <div class="bio">
                 14<br>
-                <span id="timeAgo"></span><br>
-                best friends - pixie, dre1mer, jaz, snicks, boba
+                signall <33<br>
+                twins - pixiee, dre1mer, jaz, snicks, koda<br>
+                </small>bi/femb<small>
             </div>
 
             <div class="buttons">
-                <div class="btn music" id="musicBtn">⏸ Hot N Cold - Katy Perry</div>
+                <div class="btn music" id="musicBtn">⏸ Calm Song</div>
             </div>
         </div>
 
@@ -200,41 +201,15 @@ const audio = document.getElementById('audioPlayer');
 
 let isPlaying = true;
 
-audio.src = "https://cdn.discordapp.com/attachments/1499529579751145472/1499570499666055239/Katy_Perry_-_Hot_N_Cold_Lyrics.mp3?ex=69f5475b&is=69f3f5db&hm=38898daa5e4a2db8f3c457364bce68fc3e0d798d2311d38081039261d21371e8&";
-
-// 🔥 AUTO MONTH COUNTER
-function updateTimeAgo() {
-    const startDate = new Date("2025-12-2"); // 👉 CHANGE THIS
-    const now = new Date();
-
-    let months = (now.getFullYear() - startDate.getFullYear()) * 12;
-    months += now.getMonth() - startDate.getMonth();
-
-    if (now.getDate() < startDate.getDate()) {
-        months--;
-    }
-
-    if (months < 0) months = 0;
-
-    const text = months === 0 ? "1 months" : months + " months";
-    document.getElementById("timeAgo").innerText = text;
-}
-
-updateTimeAgo();
-
-enterBtn.onclick = () => {
-    intro.style.display = "none";
-    main.style.display = "block";
-    audio.play().catch(()=>{});
-};
+audio.src = "https://cdn.discordapp.com/attachments/1499529579751145472/1500186911694913616/10_minute_meditation_music_-_10_minute_relaxing_meditation_music.mp3?ex=69f7856f&is=69f633ef&hm=c07c43d52db2a83007e2dad144f79931b0442c54886c24452a0c6194183fd032&";
 
 musicBtn.onclick = () => {
     if (isPlaying) {
         audio.pause();
-        musicBtn.innerHTML = "▶ Hot N Cold - Katy Perry";
+        musicBtn.innerHTML = "▶ Calm Song";
     } else {
         audio.play();
-        musicBtn.innerHTML = "⏸ Hot N Cold - Katy Perry";
+        musicBtn.innerHTML = "⏸ Calm Song;
     }
     isPlaying = !isPlaying;
 };
